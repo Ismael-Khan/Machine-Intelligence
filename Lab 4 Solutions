@@ -1,0 +1,15 @@
+Question 1
+
+Randomly generate a series of solutions (example 10 random solutions indicating the rows and columns each Queen is in).
+Check the fitness score of each solution; it is very likely that some share rows, columns or diagonals.
+In this case the fitness score is the sum of possiblities that a queen can attack another
+The aim is a fitness score of 0, any higher is a fail. Then, take the 2 solutions with the lowest fitness scores
+and apply crossover and mutation. There are 8 values in each solution so take the crossover point as 4:
+- create Child 1 by combining the first half of Parent 1 and the second half of Parent 2
+- create Child 2 by combining the first half of Parent 2 and the second half of Parent 1
+- Apply mutation to each Child by changing one column with a random value between 0 and 7
+Then assess the fitness scores of each Child to see if its better than either of its parents.
+Add the Children back to the initial pool of solutions and repeat the process until a fitness score of 0 is attained.
+
+Question 2
+
